@@ -46,5 +46,13 @@ body {
     line-height: 28px;
     color: #000000;
   }
-  
+  .status-bar {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+.status-bar span {
+    margin: 0 10px;
+}
   

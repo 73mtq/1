@@ -10,21 +10,17 @@
     <canvas id="chess" width="450px" height="450px"></canvas>
     <div id="demo">坐标：</div>
     <div class="btn_wrap">
-        <div id="playerFirst" class="playerFirst">
-            <span>我先手</span>
-        </div>
-        <div id="computerFirst" class="computerFirst">
-            <span>电脑先手</span>
-        </div>
-        <div id="restart" class="restart">
-            <span>重新开始</span>
-        </div>
-        <div id="goback" class="goback unable">
-            <span>悔棋一次</span>
-        </div>
-        <div id="return" class="return unable">
-            <span>撤销悔棋</span>
-        </div>
+        <div id="playerFirst" class="playerFirst"><span>我先手</span></div>
+        <div id="computerFirst" class="computerFirst"><span>电脑先手</span></div>
+        <div id="restart" class="restart"><span>重新开始</span></div>
+        <div id="goback" class="goback unable"><span>悔棋一次</span></div>
+        <div id="return" class="return unable"><span>撤销悔棋</span></div>
+        <div id="dice" class="dice"><span>扔骰子</span></div>
+    </div>
+    <div id="statusBar" class="status-bar">
+        <span>当前玩家：<span id="currentPlayer">等待开始</span></span> |
+        <span>骰子点数：<span id="diceNumber">未掷</span></span> |
+        <span id="canMoveStatus">请开始布局</span>
     </div>
     <script src="Einstein.js"></script>
 </body>

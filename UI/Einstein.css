@@ -1,0 +1,50 @@
+
+body {
+    background-image: url('./古风.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  canvas {
+    display: block; /*让棋盘块状显示*/
+    margin: 50px auto; /*让棋盘左右居中*/
+    box-shadow: -2px -2px 2px #ece7e7, 3px 3px 3px #fafafa; /*添加棋盘阴影，使棋盘看起来更有立体感*/
+    cursor: pointer; /*改变鼠标光标（手型光标），增强用户的下棋落点准确性 */
+    background-color: #fefdfc;
+    background-size: contain;
+  }
+  #demo {/*坐标*/
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: #8b8484;
+  }
+  .btn_wrap {/*整个class=btn_wrap*/
+    display: flex;
+    justify-content: center; /*水平居中*/
+  }
+  .btn_wrap div {
+    margin: 0 10px;
+  }
+  div > span {/*重新开始、悔棋一次、撤销悔棋、我先手、电脑先手*/
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ebb84a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  div.unable span {/*悔棋一次、撤销悔棋*/
+    background: #cdcdc5;
+    color: #86837b;
+  }
+  #result_wrap {/*人机大战五子棋*/
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: #000000;
+  }
+  
+  

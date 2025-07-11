@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
+    <!-- 游戏标题 -->
     <title>Einstein</title>
+    <!-- 引入外部CSS样式文件 -->
     <link rel="stylesheet" href="Einstein.css" />
 </head>
 <body>
+    <!-- 游戏主标题显示 -->
     <p id="result_wrap">Einstein</p>
+
+    <!-- 游戏棋盘画布，设置为450x450像素 -->
     <canvas id="chess" width="450px" height="450px"></canvas>
+
+    <!-- 显示当前鼠标悬停位置的坐标信息 -->
     <div id="demo">坐标：</div>
+
+    <!-- 游戏控制按钮组容器 -->
     <div class="btn_wrap">
+        <!-- 玩家先手按钮 - 玩家控制红方 -->
         <div id="playerFirst" class="playerFirst"><span>我先手</span></div>
+        <!-- 电脑先手按钮 - 电脑控制红方 -->
         <div id="computerFirst" class="computerFirst"><span>电脑先手</span></div>
+        <!-- 重新开始游戏按钮 -->
         <div id="restart" class="restart"><span>重新开始</span></div>
+        <!-- 悔棋按钮，初始状态为禁用 -->
         <div id="goback" class="goback unable"><span>悔棋一次</span></div>
+        <!-- 撤销悔棋按钮，初始状态为禁用 -->
         <div id="return" class="return unable"><span>撤销悔棋</span></div>
+        <!-- 掷骰子按钮，支持随机和自定义点数 -->
         <div id="dice" class="dice"><span>扔骰子</span></div>
     </div>
+
+    <!-- 游戏状态信息栏，显示当前玩家、骰子点数和游戏状态 -->
     <div id="statusBar" class="status-bar">
         <span>当前玩家：<span id="currentPlayer">等待开始</span></span> |
         <span>骰子点数：<span id="diceNumber">未掷</span></span> |
         <span id="canMoveStatus">请开始布局</span>
     </div>
+
+    <!-- 引入游戏核心逻辑JavaScript文件 -->
     <script src="Einstein.js"></script>
 </body>
 </html>

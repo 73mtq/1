@@ -1,58 +1,76 @@
-
+/* 设置页面背景为古风图片，覆盖整个屏幕 */
 body {
-    background-image: url('./古风.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-  }
-  canvas {
-    display: block; /*让棋盘块状显示*/
-    margin: 50px auto; /*让棋盘左右居中*/
-    box-shadow: -2px -2px 2px #ece7e7, 3px 3px 3px #fafafa; /*添加棋盘阴影，使棋盘看起来更有立体感*/
-    cursor: pointer; /*改变鼠标光标（手型光标），增强用户的下棋落点准确性 */
-    background-color: #fefdfc;
-    background-size: contain;
-  }
-  #demo {/*坐标*/
-    text-align: center;
-    margin-top: -30px;
-    margin-bottom: 10px;
-    color: #8b8484;
-  }
-  .btn_wrap {/*整个class=btn_wrap*/
-    display: flex;
-    justify-content: center; /*水平居中*/
-  }
-  .btn_wrap div {
-    margin: 0 10px;
-  }
-  div > span {/*重新开始、悔棋一次、撤销悔棋、我先手、电脑先手*/
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #ebb84a;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  div.unable span {/*悔棋一次、撤销悔棋*/
-    background: #cdcdc5;
-    color: #86837b;
-  }
-  #result_wrap {/*人机大战五子棋*/
-    text-align: center;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
-    color: #000000;
-  }
-  .status-bar {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 16px;
-    color: #333;
+    background-image: url('./古风.png'); /* 背景图片路径 */
+    background-size: cover; /* 背景图片覆盖整个容器 */
+    background-repeat: no-repeat; /* 不重复显示背景图片 */
+    background-position: center center; /* 背景图片居中显示 */
+    background-attachment: fixed; /* 背景图片固定，不随滚动条移动 */
 }
+
+/* 游戏棋盘Canvas元素样式设置 */
+canvas {
+    display: block; /* 使canvas成为块级元素，独占一行 */
+    margin: 50px auto; /* 上下边距50px，左右自动居中 */
+    /* 添加阴影效果，营造立体感：左上浅色阴影，右下深色阴影 */
+    box-shadow: -2px -2px 2px #ece7e7, 3px 3px 3px #fafafa;
+    cursor: pointer; /* 鼠标悬停时显示手型光标，提示可点击 */
+    background-color: #fefdfc; /* 棋盘背景色为浅米色 */
+    background-size: contain; /* 背景图片按比例缩放以完全显示 */
+}
+
+/* 坐标显示区域样式 */
+#demo {
+    text-align: center; /* 文字居中对齐 */
+    margin-top: -30px; /* 向上偏移30px，使其靠近棋盘 */
+    margin-bottom: 10px; /* 下边距10px */
+    color: #8b8484; /* 文字颜色为灰色 */
+}
+
+/* 按钮容器的Flexbox布局设置 */
+.btn_wrap {
+    display: flex; /* 使用弹性盒子布局 */
+    justify-content: center; /* 子元素水平居中排列 */
+}
+
+/* 按钮容器内每个按钮div的间距设置 */
+.btn_wrap div {
+    margin: 0 10px; /* 左右边距各10px，创建按钮间的间隔 */
+}
+
+/* 通用按钮样式设置 */
+div > span {
+    display: inline-block; /* 行内块元素，可设置宽高 */
+    padding: 10px 20px; /* 内边距：上下10px，左右20px */
+    color: #fff; /* 文字颜色为白色 */
+    background-color: #ebb84a; /* 背景色为金黄色 */
+    border-radius: 5px; /* 圆角边框5px */
+    cursor: pointer; /* 鼠标悬停时显示手型光标 */
+}
+
+/* 禁用状态按钮的样式 */
+div.unable span {
+    background: #cdcdc5; /* 禁用时背景色为灰色 */
+    color: #86837b; /* 禁用时文字颜色为深灰色 */
+}
+
+/* 游戏标题样式设置 */
+#result_wrap {
+    text-align: center; /* 文字居中对齐 */
+    font-weight: bold; /* 粗体字 */
+    font-size: 28px; /* 字体大小28px */
+    line-height: 28px; /* 行高28px */
+    color: #000000; /* 文字颜色为黑色 */
+}
+
+/* 状态栏整体样式设置 */
+.status-bar {
+    text-align: center; /* 文字居中对齐 */
+    margin-top: 20px; /* 上边距20px */
+    font-size: 16px; /* 字体大小16px */
+    color: #333; /* 文字颜色为深灰色 */
+}
+
+/* 状态栏内各个span元素的间距 */
 .status-bar span {
-    margin: 0 10px;
+    margin: 0 10px; /* 左右边距各10px */
 }
-  

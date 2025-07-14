@@ -72,7 +72,7 @@ class EinsteinGame {
             const eatMessage = toData.color === fromData.color ? 
                 `${fromData.color === COLORS.RED ? '红方' : '蓝方'}吃掉了自己的棋子${toData.number}！` :
                 `${fromData.color === COLORS.RED ? '红方' : '蓝方'}吃掉了${toData.color === COLORS.RED ? '红方' : '蓝方'}的棋子${toData.number}！`;
-            alert(eatMessage);
+            // alert(eatMessage);
         }
         
         // 更新棋盘
@@ -102,12 +102,12 @@ class EinsteinGame {
      */
     handleDiceClick() {
         if (this.gameState.gamePhase !== GAME_PHASES.PLAYING) {
-            alert("请先完成棋子布局并选择颜色");
+            // alert("请先完成棋子布局并选择颜色");
             return;
         }
         
         if (this.gameState.isDiceRolled) {
-            alert("请先完成本轮移动再重新掷骰子");
+            // alert("请先完成本轮移动再重新掷骰子");
             return;
         }
 
@@ -147,18 +147,18 @@ class EinsteinGame {
         );
         
         if (!moveResult.success) {
-            alert(moveResult.message);
+            // alert(moveResult.message);
             this.gameState.switchTurn();
             this.uiManager.updateStatusBar(this.gameState);
             return;
         }
         
         if (moveResult.chosenNumber !== moveResult.diceNum) {
-            alert(`编号 ${moveResult.diceNum} 不存在，AI选择编号 ${moveResult.chosenNumber}`);
+            // alert(`编号 ${moveResult.diceNum} 不存在，AI选择编号 ${moveResult.chosenNumber}`);
         }
         
         this.executeMove(moveResult.from.row, moveResult.from.col, moveResult.to.row, moveResult.to.col);
-        alert(moveResult.message);
+        // alert(moveResult.message);
     }
 
     /**
@@ -169,7 +169,7 @@ class EinsteinGame {
         this.boardRenderer.clearBoard();
         this.uiManager.enableBoardInteraction();
         this.uiManager.updateStatusBar(this.gameState);
-        alert("游戏已重置，请重新布局棋子");
+        // alert("游戏已重置，请重新布局棋子");
     }
 
     /**
@@ -177,13 +177,13 @@ class EinsteinGame {
      */
     handlePlayerFirst() {
         if (this.gameState.gamePhase !== GAME_PHASES.WAITING_FOR_CHOICE) {
-            alert("请先完成棋子布局！");
+            // alert("请先完成棋子布局！");
             return;
         }
         
         this.gameState.gamePhase = GAME_PHASES.PLAYING;
         this.gameState.setPlayerColor(COLORS.RED);
-        alert("你控制红方，红方先手，请掷骰子开始游戏！");
+        // alert("你控制红方，红方先手，请掷骰子开始游戏！");
         this.uiManager.updateStatusBar(this.gameState);
     }
 
@@ -192,13 +192,13 @@ class EinsteinGame {
      */
     handleComputerFirst() {
         if (this.gameState.gamePhase !== GAME_PHASES.WAITING_FOR_CHOICE) {
-            alert("请先完成棋子布局！");
+            // alert("请先完成棋子布局！");
             return;
         }
         
         this.gameState.gamePhase = GAME_PHASES.PLAYING;
         this.gameState.setPlayerColor(COLORS.BLUE);
-        alert("电脑控制红方先手，请掷骰子，电脑会根据点数自动走棋！");
+        // alert("电脑控制红方先手，请掷骰子，电脑会根据点数自动走棋！");
         this.uiManager.updateStatusBar(this.gameState);
     }
 
@@ -207,7 +207,7 @@ class EinsteinGame {
      */
     handleGoback() {
         if (this.gameState.moveHistory.length === 0 || this.gameState.gamePhase !== GAME_PHASES.PLAYING) {
-            alert("没有可悔的棋");
+            // alert("没有可悔的棋");
             return;
         }
 
@@ -235,7 +235,7 @@ class EinsteinGame {
      */
     handleReturn() {
         if (this.gameState.undoneMoves.length === 0) {
-            alert("没有可撤销的悔棋");
+            // alert("没有可撤销的悔棋");
             return;
         }
 

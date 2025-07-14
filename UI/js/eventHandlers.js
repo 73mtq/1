@@ -55,7 +55,7 @@ class EventHandlers {
      */
     handleLayoutClick(row, col) {
         if (this.gameState.gridState[row][col] !== null) {
-            alert("此位置已有棋子！");
+            // alert("此位置已有棋子！");
             return;
         }
 
@@ -73,7 +73,7 @@ class EventHandlers {
         this.gameState.clickCount++;
 
         if (this.gameState.clickCount === 12) {
-            alert("棋子布局完成！请选择你要控制的颜色（红方先手）");
+            // alert("棋子布局完成！请选择你要控制的颜色（红方先手）");
             this.gameState.gamePhase = GAME_PHASES.WAITING_FOR_CHOICE;
         }
         
@@ -109,13 +109,13 @@ class EventHandlers {
         if (cellData && cellData.color === this.gameState.pendingChoiceColor) {
             const selectedNumber = cellData.number;
             if (this.gameState.availableNumbersForChoice.includes(selectedNumber)) {
-                alert(`你选择了编号：${selectedNumber}`);
+                // alert(`你选择了编号：${selectedNumber}`);
                 this.gameState.availableNumbersForChoice = [];
                 this.gameState.pendingChoiceColor = null;
                 this.gameState.selectedCell = { row, col };
                 this.uiManager.updateStatusBar(this.gameState);
             } else {
-                alert(`请选择编号为 ${this.gameState.availableNumbersForChoice.join(' 或 ')} 的棋子`);
+                // alert(`请选择编号为 ${this.gameState.availableNumbersForChoice.join(' 或 ')} 的棋子`);
             }
         }
     }
@@ -139,7 +139,7 @@ class EventHandlers {
             // 执行移动（这里需要调用主游戏类的方法）
             this.onMoveExecuted(fromRow, fromCol, row, col);
         } else {
-            alert("不允许的移动方向！");
+            // alert("不允许的移动方向！");
             this.gameState.selectedCell = null;
             this.uiManager.updateStatusBar(this.gameState);
         }
@@ -152,15 +152,15 @@ class EventHandlers {
         if (!cellData || cellData.color !== this.gameState.currentPlayer || 
             this.gameState.currentPlayer !== this.gameState.playerColor) {
             if (cellData && cellData.color !== this.gameState.currentPlayer) {
-                alert("不能选择对方的棋子！");
+                // alert("不能选择对方的棋子！");
             } else if (this.gameState.currentPlayer !== this.gameState.playerColor) {
-                alert("当前是电脑回合！");
+                // alert("当前是电脑回合！");
             }
             return;
         }
 
         if (!this.gameState.isDiceRolled) {
-            alert("请先掷骰子！");
+            // alert("请先掷骰子！");
             return;
         }
 
@@ -173,7 +173,7 @@ class EventHandlers {
         if (pieceResult.needChoice) {
             this.gameState.availableNumbersForChoice = pieceResult.availableChoices;
             this.gameState.pendingChoiceColor = this.gameState.currentPlayer;
-            alert(`编号 ${this.gameState.diceNumber} 不存在，请从以下编号中选择一个：${pieceResult.availableChoices.join(', ')}`);
+            // alert(`编号 ${this.gameState.diceNumber} 不存在，请从以下编号中选择一个：${pieceResult.availableChoices.join(', ')}`);
             this.uiManager.updateStatusBar(this.gameState);
             return;
         }
@@ -181,11 +181,11 @@ class EventHandlers {
         if (cellData.number === pieceResult.chosenNumber) {
             this.gameState.selectedCell = { row, col };
             if (pieceResult.chosenNumber !== this.gameState.diceNumber) {
-                alert(`编号 ${this.gameState.diceNumber} 不存在，使用编号 ${pieceResult.chosenNumber}`);
+                // alert(`编号 ${this.gameState.diceNumber} 不存在，使用编号 ${pieceResult.chosenNumber}`);
             }
             this.uiManager.updateStatusBar(this.gameState);
         } else {
-            alert(`请选择编号为 ${pieceResult.chosenNumber} 的棋子`);
+            // alert(`请选择编号为 ${pieceResult.chosenNumber} 的棋子`);
         }
     }
 

@@ -48,7 +48,7 @@ class UIManager {
      * @param {string} message - 结束信息
      */
     showGameEnd(message) {
-        alert(message);
+        // alert(message);
         document.getElementById('canMoveStatus').textContent = message;
         
         // 禁用棋盘交互
@@ -72,7 +72,7 @@ class UIManager {
     showDiceResult(number, isCustom = false) {
         const icon = isCustom ? '🎯' : '🎲';
         const text = isCustom ? '自定义点数' : '掷得点数';
-        alert(`${icon} ${text}：${number}`);
+        // alert(`${icon} ${text}：${number}`);
     }
 
     /**

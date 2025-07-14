@@ -72,7 +72,7 @@ class EinsteinGame {
             const eatMessage = toData.color === fromData.color ? 
                 `${fromData.color === COLORS.RED ? '红方' : '蓝方'}吃掉了自己的棋子${toData.number}！` :
                 `${fromData.color === COLORS.RED ? '红方' : '蓝方'}吃掉了${toData.color === COLORS.RED ? '红方' : '蓝方'}的棋子${toData.number}！`;
-            // alert(eatMessage);
+            alert(eatMessage);
         }
         
         // 更新棋盘
@@ -147,7 +147,7 @@ class EinsteinGame {
         );
         
         if (!moveResult.success) {
-            // alert(moveResult.message);
+            alert(moveResult.message);
             this.gameState.switchTurn();
             this.uiManager.updateStatusBar(this.gameState);
             return;
@@ -158,7 +158,7 @@ class EinsteinGame {
         }
         
         this.executeMove(moveResult.from.row, moveResult.from.col, moveResult.to.row, moveResult.to.col);
-        // alert(moveResult.message);
+        alert(moveResult.message);
     }
 
     /**

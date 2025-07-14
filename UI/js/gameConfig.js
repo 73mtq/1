@@ -5,7 +5,7 @@
 // 棋盘基本配置
 export const BOARD_CONFIG = {
     SIZE: 450,           // 棋盘大小
-    GRID_COUNT: 6,       // 网格数量
+    GRID_COUNT: 6,       // 网线数量
     CELL_WIDTH: 450 / 5, // 单元格宽度
     CELL_HEIGHT: 450 / 5 // 单元格高度
 };

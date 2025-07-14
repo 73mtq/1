@@ -16,8 +16,8 @@ class AIPlayer {
     static makeMove(diceNum, aiColor, gridState) {
         // 收集AI所有棋子
         const aiPieces = [];
-        for (let row = 0; row < 6; row++) {
-            for (let col = 0; col < 6; col++) {
+        for (let row = 0; row < 5; row++) {
+            for (let col = 0; col < 5; col++) {
                 const cell = gridState[row][col];
                 if (cell && cell.color === aiColor) {
                     aiPieces.push({ row, col, number: cell.number });

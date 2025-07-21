@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c21288e1-d1df-4dbd-97e1-b4b0767c707d" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/aiensitanqi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/BoardPanel$BoardMouseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/BoardPanel$BoardMouseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/BoardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/BoardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/GameJFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/GameJFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/GameJFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/GameJFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/GameLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/GameLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/PieceSelector.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/PieceSelector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/UCT.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/UCT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/UIRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/out/production/aiensitanqi/aiensitanqi/iu/UIRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aiensitanqi/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/aiensitanqi/src/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,25 +48,29 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/github-repository/1/aiensitanqi",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/github-repository/1/untitled/src/main/java/com/codewithmosh/Main.java",
     "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.App.executor": "Run"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,11 +94,50 @@
       <workItem from="1753084916638" duration="90000" />
       <workItem from="1753085042833" duration="27000" />
       <workItem from="1753085093004" duration="130000" />
-      <workItem from="1753085234941" duration="66000" />
+      <workItem from="1753085234941" duration="270000" />
+      <workItem from="1753085508362" duration="87000" />
+      <workItem from="1753085603040" duration="73000" />
+      <workItem from="1753085678223" duration="21000" />
+      <workItem from="1753085707094" duration="177000" />
+      <workItem from="1753085892055" duration="7000" />
+      <workItem from="1753085904078" duration="3000" />
+      <workItem from="1753085913514" duration="3000" />
+      <workItem from="1753085928699" duration="250000" />
+      <workItem from="1753086308671" duration="39000" />
+      <workItem from="1753086349725" duration="36000" />
+      <workItem from="1753086393474" duration="469000" />
+      <workItem from="1753086886854" duration="97000" />
+      <workItem from="1753086992173" duration="47000" />
+      <workItem from="1753087041962" duration="173000" />
+      <workItem from="1753087227105" duration="592000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <option name="closed" value="true" />
+      <created>1753085309954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753085309954</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/untitled/src/main/java/com/codewithmosh/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

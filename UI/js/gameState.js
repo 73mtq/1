@@ -10,8 +10,8 @@ class GameState {
     }
 
     reset() {
-        // 棋盘数据：5x5二维数组
-        this.gridState = Array.from({ length: 5 }, () => Array(5).fill(null));
+        // 棋盘数据：6x6二维数组
+        this.gridState = Array.from({ length: 6 }, () => Array(6).fill(null));
         
         // 游戏流程控制
         this.gamePhase = GAME_PHASES.LAYOUT;

@@ -64,8 +64,8 @@ class BoardRenderer {
      * 清空整个棋盘
      */
     clearBoard() {
-        for (let row = 0; row < 5; row++) {
-            for (let col = 0; col < 5; col++) {
+        for (let row = 0; row < 6; row++) {
+            for (let col = 0; col < 6; col++) {
                 this.renderCell(row, col, COLORS.EMPTY);
             }
         }
@@ -76,8 +76,8 @@ class BoardRenderer {
      * @param {Array} gridState - 棋盘状态数组
      */
     renderBoard(gridState) {
-        for (let row = 0; row < 5; row++) {
-            for (let col = 0; col < 5; col++) {
+        for (let row = 0; row < 6; row++) {
+            for (let col = 0; col < 6; col++) {
                 const cell = gridState[row][col];
                 if (cell) {
                     this.renderCell(row, col, cell.color, cell.number);

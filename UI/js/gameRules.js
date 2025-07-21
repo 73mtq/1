@@ -16,7 +16,7 @@ class GameRules {
      */
     static isValidMove(fromRow, fromCol, toRow, toCol, color) {
         // 检查边界
-        if (toRow < 0 || toRow >= 5 || toCol < 0 || toCol >= 5) {
+        if (toRow < 0 || toRow >= 6 || toCol < 0 || toCol >= 6) {
             return false;
         }
 
@@ -44,8 +44,8 @@ class GameRules {
         const availableNumbers = [];
 
         // 收集所有该颜色的棋子编号
-        for (let row = 0; row < 5; row++) {
-            for (let col = 0; col < 5; col++) {
+        for (let row = 0; row < 6; row++) {
+            for (let col = 0; col < 6; col++) {
                 const cell = gridState[row][col];
                 if (cell && cell.color === color && cell.number) {
                     availableNumbers.push(cell.number);
@@ -92,8 +92,8 @@ class GameRules {
         let hasBlue = false;
 
         // 统计棋子
-        for (let row = 0; row < 5; row++) {
-            for (let col = 0; col < 5; col++) {
+        for (let row = 0; row < 6; row++) {
+            for (let col = 0; col < 6; col++) {
                 const cell = gridState[row][col];
                 if (cell) {
                     if (cell.color === COLORS.RED) hasRed = true;

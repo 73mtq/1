@@ -237,7 +237,7 @@ class EventHandlers {
             const row = Math.floor(y / BOARD_CONFIG.CELL_HEIGHT);
 
             const demo = document.getElementById('demo');
-            if (col >= 0 && col < 5 && row >= 0 && row < 5) {
+            if (col >= 0 && col < 6 && row >= 0 && row < 6) {
                 demo.textContent = `坐标：(${row}, ${col})`;
             } else {
                 demo.textContent = '坐标：超出棋盘范围';
